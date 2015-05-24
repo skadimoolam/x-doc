@@ -11,7 +11,8 @@
     "node",
     "iojs",
     "documentation",
-    "offline"
+    "offline",
+    "browse"
   ],
   "author": "Adi <skadimoolam@gmail.com>",
   "license": "MIT"
