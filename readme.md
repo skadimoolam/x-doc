@@ -7,16 +7,14 @@ x-dox is a tiny node CLI app to browse the official Node Documentation.
 
  This should install the CLI app.
 
- ### Usage
+### Usage
  Using it is as simple as typing
 
  >x-doc fs.readFileSync
 
- As of now you have to enter the Module name and the Method you need Documentation for, like shown in the above example.
+ >x-doc http
 
-## To-do
+### Please Note
+This is in very early stages of Development, expect it to be a little quirky. Please file bugs when you find them.
 
- - [ ] Support for UniCode replacement
- - [ ] Version Specific Documentation
- - [ ] Access to all parts of the Documentation and not just the "modules"
- - [ ] Maybe a Plug-in system to plug Documentation for other Apps and Frameworks
+And all Contribution are appreciated.
