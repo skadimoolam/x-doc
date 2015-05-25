@@ -1,5 +1,7 @@
 #!/usr/bin/env node
 
+'use strict';
+
 var
 	argv = processArgv(process.argv),
 	doc = require('./all.json').modules;
