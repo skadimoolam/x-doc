@@ -1,6 +1,6 @@
 ## To-do
 
- - [ ] More efficient search algorithm
+ - [ ] More robust search algorithm
  - [ ] Support for UniCode replacement
  - [ ] Version Specific Documentation
  - [ ] Access to all parts of the Documentation and not just the "modules"

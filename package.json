@@ -1,9 +1,9 @@
 {
   "name": "x-doc",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "preferGlobal": true,
   "bin": {
-    "x-doc": "src/index.js"
+    "x-doc": "index.js"
   },
   "description": "Tiny CLI app to browse the Node Documentation offline.",
   "repository": "git://github.com/skadimoolam/x-doc.git",

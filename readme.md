@@ -21,6 +21,11 @@ This is in very early stages of Development, expect it to be a little quirky. Pl
 And all Contribution are appreciated.
 
 ### Change Log
+#### v0.0.5 (date)
+ - Separated each piece of functionality into it's own module
+ - Added support for rendering Unicode '&#039;'
+ - Codes in the Documentation look a little pretty
+
 #### v0.0.4 (25-5-15)
  - Added support for Colored output, this feature is best viewed in Terminal with Black Background
 
@@ -29,6 +34,6 @@ And all Contribution are appreciated.
 
 #### v0.0.2 (24-5-15)
  - Added jsDoc for most function in the Program
- 
+
 #### v0.0.1 (24-5-15)
  - First working Version
