@@ -3,10 +3,11 @@
 'use strict';
 
 var
+	colors = require('colors/safe'),
 	argv = processArgv(process.argv),
 	doc = require('./all.json').modules;
 
-if (argv[0]) {
+if (argv) {
 	for (var i in doc) {
 		var data = doc[i];
 
@@ -23,7 +24,7 @@ if (argv[0]) {
 		}
 	}
 } else {
-	console.log('Specify what you are searching for as the second Parameter, like shown below:\n x-doc http\n x-doc fs.readFileSync');
+	console.log(colors.red('Specify what you are searching for as the second Parameter, like shown below:\n> x-doc http\n> x-doc fs.readFileSync'));
 }
 
 /**
@@ -33,9 +34,9 @@ if (argv[0]) {
 */
 function log(input) {
 	var stippedDesc = stripTags(input.desc);
-	console.log('\n' + 'Text Raw: ' + input.textRaw);
-	console.log('Name: ' + input.name + '\n');
-	console.log('Description:\n' + stippedDesc);
+	console.log('\n' + 'Text Raw: ' + colors.magenta(input.textRaw));
+	console.log('Name: ' + colors.magenta(input.name) + '\n');
+	console.log('Description:\n' + colors.cyan(stippedDesc));
 }
 
 
@@ -65,7 +66,7 @@ function processArgv(argv) {
 	var argv = argv.slice(2);
 
 	if (argv[0] == undefined) {
-		return argv;
+		return false;
 	} else {
 		argv = argv[0].split('.');
 

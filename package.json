@@ -16,5 +16,8 @@
     "browse"
   ],
   "author": "Adi <skadimoolam@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "colors": "^1.1.0"
+  }
 }
