@@ -1,4 +1,4 @@
-## x-doc Documentation
+## x-doc
 
 x-dox is a tiny node CLI app to browse the official Node Documentation.
 
@@ -15,16 +15,17 @@ x-dox is a tiny node CLI app to browse the official Node Documentation.
  >x-doc http
 
 ### Please Note
-All the current docs are based on IOjs and not NodeJS, but this will be soon fixed.
+All the current docs are based on IOjs(v2.1.0) and not NodeJS, but this will be soon fixed.
 This is in very early stages of Development, expect it to be a little quirky. Please file bugs when you find them.
 
 And all Contribution are appreciated.
 
 ### Change Log
-#### v0.0.5 (date)
- - Separated each piece of functionality into it's own module
+#### v0.0.5 (26-5-15)
+ - Added support to view all the methods of a module
  - Added support for rendering Unicode '&#039;'
  - Codes in the Documentation look a little pretty
+ - Separated each piece of functionality into it's own module
 
 #### v0.0.4 (25-5-15)
  - Added support for Colored output, this feature is best viewed in Terminal with Black Background

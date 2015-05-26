@@ -11,19 +11,20 @@ if (argv) {
 		var data = doc[i];
 
 		if (data.name == argv[0] && !argv[1]) {
-			log(data);
+			log.multiLine(data);
+			log.logMethods(data);
 		} else if (data.name == argv[0] && argv[1]) {
 			for (var j in data.methods) {
 				var method = data.methods[j];
 
 				if (method.name == argv[1]) {
-					log(method);
+					log.multiLine(method);
 				}
 			}
 		}
 	}
 } else {
-	log('Specify what you are searching for as the second Parameter, like shown below:\n> x-doc http\n> x-doc fs.readFileSync', false, 'red');
+	log.singleLine('Specify what you are searching for as the second Parameter, like shown below:\n> x-doc http\n> x-doc fs.readFileSync', 'red');
 }
 
 // 'https://iojs.org/dist/v2.0.2/doc/api/'
