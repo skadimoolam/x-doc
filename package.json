@@ -1,6 +1,6 @@
 {
   "name": "x-doc",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "preferGlobal": true,
   "bin": {
     "x-doc": "index.js"
@@ -16,7 +16,7 @@
     "browse"
   ],
   "scripts": {
-    "postinstall": "postinstall.js",
+    "postinstall": "node postinstall.js",
     "gitpub": "git push && npm publish"
   },
   "author": "Adi <skadimoolam@gmail.com>",
