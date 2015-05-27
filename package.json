@@ -1,13 +1,13 @@
 {
   "name": "x-doc",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "preferGlobal": true,
   "bin": {
     "x-doc": "index.js"
   },
   "description": "Tiny CLI app to browse the Node Documentation offline.",
   "repository": "git://github.com/skadimoolam/x-doc.git",
-  "main": "src/index.js",
+  "main": "index.js",
   "keywords": [
     "node",
     "iojs",
@@ -15,9 +15,15 @@
     "offline",
     "browse"
   ],
+  "scripts": {
+    "postinstall": "postinstall.js",
+    "gitpub": "git push && git push --tags && npm publish"
+  },
   "author": "Adi <skadimoolam@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "colors": "^1.1.0"
+    "chalk": "^1.0.0",
+    "inquirer": "^0.8.5",
+    "minimist": "^1.1.1"
   }
 }

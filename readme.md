@@ -14,6 +14,11 @@ x-dox is a tiny node CLI app to browse the official Node Documentation.
 
  >x-doc http
 
+ If you add '-m' flag to your search, this will display a List of all the methods of a module
+ Previously this was not optional.
+
+ >x-doc http -m
+
 ### Please Note
 All the current docs are based on IOjs(v2.1.0) and not NodeJS, but this will be soon fixed.
 This is in very early stages of Development, expect it to be a little quirky. Please file bugs when you find them.
@@ -21,6 +26,13 @@ This is in very early stages of Development, expect it to be a little quirky. Pl
 And all Contribution are appreciated.
 
 ### Change Log
+#### v0.06 (date)
+ - Partially implemented Version Specific Documentations
+ - Added 'postinstall' script to download a JSON file Specific for your Version of Node or IOjs
+ - Added '-m' CLI flag to display a List of all the methods of a module
+ - Replaced Colors.js with Chalk, no visual difference
+ - Added minimist to work with CLI Options and Arguments
+
 #### v0.0.5 (26-5-15)
  - Added support to view all the methods of a module
  - Added support for rendering Unicode '&#039;'

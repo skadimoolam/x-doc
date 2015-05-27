@@ -8,7 +8,7 @@
 
 var
   stripTags = require('./stripTags.js'),
-  colors = require('colors/safe');
+  chalk = require('chalk');
 
 /**
 @module singleLine
@@ -17,7 +17,7 @@ var
 @param {string} color
 */
 exports.singleLine = function (input, color) {
-    console.log(colors[color](input));
+    console.log(chalk[color](input));
 }
 
 
@@ -29,9 +29,9 @@ exports.singleLine = function (input, color) {
 exports.multiLine = function (input) {
   var stippedDesc = stripTags(input.desc);
 
-  console.log('\n' + 'Name_raw: ' + colors.magenta(input.textRaw));
-	console.log('Name: ' + colors.magenta(input.name) + '\n');
-	console.log('Description:\n' + colors.cyan(stippedDesc));
+  console.log('\n' + 'Name_raw: ' + chalk.magenta(input.textRaw));
+	console.log('Name: ' + chalk.magenta(input.name) + '\n');
+	console.log('Description:\n' + chalk.cyan(stippedDesc));
 }
 
 
@@ -43,9 +43,9 @@ exports.multiLine = function (input) {
 exports.logMethods = function (input) {
   var list = input.methods;
 
-  console.log(colors.green('\nList of all the Methods in this Module'));
+  console.log(chalk.green('\nList of all the Methods in this Module'));
 
   for (var i in list) {
-    console.log(' - ' + colors.magenta(list[i].name));
+    console.log(' - ' + chalk.magenta(list[i].name));
   }
 }

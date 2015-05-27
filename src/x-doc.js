@@ -3,8 +3,11 @@
 var
 	processArgv = require('./processArgv.js'),
 	log = require('./output.js'),
-	argv = processArgv(process.argv.slice(2)),
+	arg = require('minimist')(process.argv.slice(2)),
+	argv = processArgv(arg._),
 	doc = require('./all.json').modules;
+
+console.log(arg.m);
 
 if (argv) {
 	for (var i in doc) {
@@ -12,7 +15,7 @@ if (argv) {
 
 		if (data.name == argv[0] && !argv[1]) {
 			log.multiLine(data);
-			log.logMethods(data);
+			if (arg.m) {	log.logMethods(data)	};
 		} else if (data.name == argv[0] && argv[1]) {
 			for (var j in data.methods) {
 				var method = data.methods[j];
@@ -24,8 +27,5 @@ if (argv) {
 		}
 	}
 } else {
-	log.singleLine('Specify what you are searching for as the second Parameter, like shown below:\n> x-doc http\n> x-doc fs.readFileSync', 'red');
+	log.singleLine('Specify what you are searching for as the second Parameter, like shown below:\n\n> x-doc http\n> x-doc fs.readFileSync', 'red');
 }
-
-// 'https://iojs.org/dist/v2.0.2/doc/api/'
-// 'https://nodejs.org/docs/v0.10.0/api/'
