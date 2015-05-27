@@ -7,8 +7,6 @@ var
 	argv = processArgv(arg._),
 	doc = require('./all.json').modules;
 
-console.log(arg.m);
-
 if (argv) {
 	for (var i in doc) {
 		var data = doc[i];

@@ -16,7 +16,7 @@
     "browse"
   ],
   "scripts": {
-    "postinstall": "node postinstall.js",
+    "postinstall": "node scripts/postinstall.js",
     "gitpub": "git push && npm publish"
   },
   "author": "Adi <skadimoolam@gmail.com>",

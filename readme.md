@@ -1,6 +1,13 @@
 ## x-doc
 
-x-dox is a tiny node CLI app to browse the official Node Documentation.
+#### Would it not be very convenient if you could browse all of Node's DOCs right from the command line?
+
+x-doc lets you do just that.
+x-doc is a tiny CLI app that aims to reduce the need to open a browser window to search for NodeJS / IOjs Documentation, the only catch is that it doesn't look as pretty but this is the compromise we make for saving a few minutes daily.
+
+Right now documentation for all modules and their methods are available but more will be available soon.
+
+Somethings are still a little quirky as this is very early stages of development.
 
 ### Install
  > npm install x-doc
@@ -14,19 +21,19 @@ x-dox is a tiny node CLI app to browse the official Node Documentation.
 
  >x-doc http
 
- If you add '-m' flag to your search, this will display a List of all the methods of a module
- Previously this was not optional.
-
  >x-doc http -m
 
-### Please Note
-All the current docs are based on IOjs(v2.1.0) and not NodeJS, but this will be soon fixed.
-This is in very early stages of Development, expect it to be a little quirky. Please file bugs when you find them.
+ If you add a '-m' flag to your search, this will display a List of all the methods of a module, previously this was not optional.
 
-And all Contribution are appreciated.
+--------
+
+#### I am quite new to Node_Module maintenance so any help in that regard would be great.
+### And all Contribution including pull requests or filing bugs are  greatly appreciated.
+
+--------
 
 ### Change Log
-#### v0.0.6 -v0.1.5 (27-5-15)
+#### v0.0.6 - v0.1.5 (27-5-15)
  - Partially implemented Version Specific Documentations
  - Added 'postinstall' script to download a JSON file Specific for your Version of Node or IOjs
  - Added '-m' CLI flag to display a List of all the methods of a module
