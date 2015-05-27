@@ -3,6 +3,7 @@
 #### Would it not be very convenient if you could browse all of Node's DOCs right from the command line?
 
 x-doc lets you do just that.
+
 x-doc is a tiny CLI app that aims to reduce the need to open a browser window to search for NodeJS / IOjs Documentation, the only catch is that it doesn't look as pretty but this is the compromise we make for saving a few minutes daily.
 
 Right now documentation for all modules and their methods are available but more will be available soon.
