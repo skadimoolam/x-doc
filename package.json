@@ -1,6 +1,6 @@
 {
   "name": "x-doc",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "preferGlobal": true,
   "bin": {
     "x-doc": "index.js"
@@ -17,7 +17,7 @@
   ],
   "scripts": {
     "postinstall": "postinstall.js",
-    "gitpub": "git push && git push --tags && npm publish"
+    "gitpub": "git push && npm publish"
   },
   "author": "Adi <skadimoolam@gmail.com>",
   "license": "MIT",
