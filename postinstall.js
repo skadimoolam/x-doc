@@ -1,5 +1,7 @@
 #!/usr/bin/env node
 
+
+(function() {
 'use strict';
 
 var
@@ -30,7 +32,7 @@ function getVersion(whichFlavor) {
 function getDoc(link) {
   request(link, function (error, response, body) {
     if (!error && response.statusCode == 200) {
-      // fs.writeFileSync('./src/all.json', body);
+      fs.writeFileSync('./src/all.json', body);
 
       log.singleLine('\nx-doc is ready, get started by typing\n\n> x-doc http\n> x-doc fs.readFileSync', 'green');
     } else {
@@ -38,3 +40,5 @@ function getDoc(link) {
     }
   })
 }
+
+}());

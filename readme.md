@@ -26,7 +26,7 @@ This is in very early stages of Development, expect it to be a little quirky. Pl
 And all Contribution are appreciated.
 
 ### Change Log
-#### v0.06 (date)
+#### v0.0.6 -v0.1.5 (27-5-15)
  - Partially implemented Version Specific Documentations
  - Added 'postinstall' script to download a JSON file Specific for your Version of Node or IOjs
  - Added '-m' CLI flag to display a List of all the methods of a module
