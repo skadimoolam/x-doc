@@ -1,6 +1,6 @@
 {
   "name": "x-doc",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "preferGlobal": true,
   "bin": {
     "x-doc": "index.js"

@@ -4,6 +4,8 @@
 @param {array} argv
 @return {array}
 */
+
+(function() {
 'use strict';
 
 
@@ -20,3 +22,5 @@ module.exports = function (argv) {
 		return argv;                             // return the two resulting strings
 	}
 }
+
+}());

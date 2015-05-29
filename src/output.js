@@ -3,12 +3,15 @@
 @description Logs releavent data from the Source
 @param {string} input
 */
+
+(function(exports) {
 'use strict';
 
 
 var
   stripTags = require('./stripTags.js'),
   chalk = require('chalk');
+
 
 /**
 @module singleLine
@@ -49,3 +52,5 @@ exports.logMethods = function (input) {
     console.log(' - ' + chalk.magenta(list[i].name));
   }
 }
+
+}(exports));

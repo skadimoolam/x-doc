@@ -5,7 +5,7 @@
 'use strict';
 
 var
-  log = require('./src/output.js'),
+  log = require('../src/output.js'),
   fs = require('fs'),
   request = require('request'),
   inquirer = require("inquirer");

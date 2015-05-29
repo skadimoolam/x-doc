@@ -4,6 +4,7 @@
 @param {string} input
 @return {string}
 */
+(function() {
 'use strict';
 
 
@@ -15,5 +16,6 @@ module.exports = function (input) {
     return output;
 }
 
+}());
 // output = output.replace(/<code>/ig, '[');
 // output = output.replace(/<\/code>/ig, ']');

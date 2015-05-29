@@ -28,12 +28,18 @@ Somethings are still a little quirky as this is very early stages of development
 
 --------
 
-#### I am quite new to Node_Module maintenance so any help in that regard would be great.
 ### And all Contribution including pull requests or filing bugs are  greatly appreciated.
 
 --------
 
 ### Change Log
+#### v0.1.6 (29-5-15)
+ - Tweaked the search to perform a tiny bit faster
+ - Updated README with some more info
+ - Added a 'backup.json' in-case the original Documentation file is corrupt or did not download
+ - Closed all modules within Anonymous Functions
+ - Minor changes to the code base that don't really help anything.
+
 #### v0.0.6 - v0.1.5 (27-5-15)
  - Partially implemented Version Specific Documentations
  - Added 'postinstall' script to download a JSON file Specific for your Version of Node or IOjs
