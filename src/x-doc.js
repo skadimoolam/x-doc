@@ -8,7 +8,6 @@ var
 	fs = require('fs'),
 	doc;
 
-
 function dbExist() {
 	var exist = fs.existsSync('./all.json');
 
@@ -26,8 +25,11 @@ function search() {
 	if (argv) {
 	  repeat(doc, function (data) {
 	    if (data.name == argv[0] && !argv[1]) {
-				log.multiLine(data);
-				if (arg.m) {	log.logMethods(data)	};
+				if (arg['m-only']) log.logMethods(data)
+				else {
+					log.multiLine(data);
+					if (arg.m) {	log.logMethods(data)	};
+				};
 			} else if (data.name == argv[0] && argv[1]) {
 	      repeat(data.methods, function (method) {
 	        if (method.name == argv[1]) {

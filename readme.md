@@ -1,4 +1,4 @@
-## x-doc
+# x-doc
 
 #### Would it not be very convenient if you could browse all of Node's DOCs right from the command line?
 
@@ -24,15 +24,23 @@ Somethings are still a little quirky as this is very early stages of development
 
  >x-doc http -m
 
- If you add a '-m' flag to your search, this will display a List of all the methods of a module, previously this was not optional.
+ >x-doc path --m-only
+
+## Options
+ - `-m` : Displays a list of all the methods of a Module at the end the Module description
+ - `--m-only` : Displays only the methods of a Specified Module
 
 --------
 
-### And all Contribution including pull requests or filing bugs are  greatly appreciated.
+### And all Contribution are greatly appreciated.
 
 --------
 
 ### Change Log
+#### v0.1.7 (22-7-15)
+ - Added `--m-only` flag
+ - Tiny tweeks to the Search function
+
 #### v0.1.6 (29-5-15)
  - Tweaked the search to perform a tiny bit faster
  - Updated README with some more info

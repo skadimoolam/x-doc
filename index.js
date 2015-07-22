@@ -1,3 +1,3 @@
 #!/usr/bin/env node
 
-var xDoc = require('./src/x-doc.js');
+require('./src/x-doc.js');
